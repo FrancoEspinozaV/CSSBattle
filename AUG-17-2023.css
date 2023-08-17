@@ -1,0 +1,101 @@
+
+<!--<div id="centro"></div>-->
+<div class="half-circle c1"></div>
+<div class="half-circle c2"></div>
+<div class="half-circle c3"></div>
+<div class="half-circle c4"></div>
+<style>
+  :root{
+    --color-Blue:#4F77FF;
+    --color-White:#FFFFFF;
+    --width-total:400px;
+    --height-total:300px;
+    --square:70px;
+    --half-square:var(--square)/2;
+    --half-width-total: var(--width-total) / 2;
+    --half-height-total: var(--height-total) / 2;
+    --half-circle-width: 140px;
+    --half-circle-heigth: 70px;
+  }
+  html{
+    background:var(--color-Blue);
+  }
+  *{
+    margin:0px;
+    padding:0px;
+  }
+  /* Solo sirve como referencia
+  #centro {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: var(--square);
+    height: var(--square);
+    background: var(--color-Blue);
+  }*/
+  .half-circle {
+    width: var(--half-circle-width); 
+    height: var(--half-circle-heigth); 
+    background: var(--color-White);
+    border-radius: 100px 100px 0 0;
+    position:absolute;
+  }
+  .c1{
+    left:calc(
+      var(--half-width-total) - 
+      var(--half-square));
+    top:calc(
+      var(--half-height-total) -
+      var(--half-square) -
+      var(--half-circle-heigth)
+    );
+  }
+  .c2{
+    transform:rotate(90deg);
+    left:calc(
+      var(--half-width-total) +
+      var(--half-square) - 
+      var(--half-circle-heigth)/2
+    );
+    top:calc(
+      var(--half-height-total) -
+      var(--half-square) + 
+      var(--half-circle-heigth)/2
+    );
+  }
+  .c3{
+    transform:rotate(180deg);
+    left:calc(
+      var(--half-width-total) -
+      var(--half-square) -
+      var(--half-circle-heigth)
+    );
+    top:calc(
+      var(--half-height-total) +
+      var(--half-square)
+    );
+  }
+  .c4{
+    transform:rotate(270deg);
+    left:calc(
+      var(--half-width-total) -
+      var(--half-square) -
+      var(--half-circle-heigth)/2 - /*Por la rotación*/
+      var(--half-circle-heigth)
+    );
+    top:calc(
+      var(--half-height-total) -
+      var(--half-square) -
+      var(--half-circle-heigth)/2
+    );
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
