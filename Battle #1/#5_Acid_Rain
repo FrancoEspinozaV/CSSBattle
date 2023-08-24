@@ -1,0 +1,22 @@
+<b><p>
+<style>
+  *{
+    background:#0B2429;
+    position:fixed;
+    width: 120;
+    height: 120;
+  }
+  p{
+    background:#F3AC3C;
+    border-radius: 100% 0 100% 100%;
+    top:134;
+    left:80;
+    box-shadow:60px -60px #998235;
+  }
+  b{
+    background:#F3AC3C;
+    border-radius: 100%;
+    top:30;
+    left:200;
+  }
+</style>
